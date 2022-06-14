@@ -4,7 +4,11 @@ import Link from 'next/link'
 const Home: NextPage = () => {
 	return (
 		<div>
-			Hello world
+			<Link href="/does-not-exist">
+				<a>
+					<h2>Page that does not exist</h2>
+				</a>
+			</Link>
 		</div>
 	)
 }

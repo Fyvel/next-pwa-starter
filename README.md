@@ -41,6 +41,16 @@ On android device, installing a PWA is automatically prompted to the user iirc
 On safari... *To install one on iOS or iPadOS, load the PWA-capable site, choose the Share up-arrow at the bottom of the screen, and select Add to Home Screen. Note you can do the same for any website, but you won't get the offline functionality of a true PWA.* 🤮
 But there are work arounds to give a decent UX on iOs too!
 
+# III - SSR and offline support
+
+- Add `_document.tsx` file
+`_document.tsx` forms the overall structure of the **HTML**. This file is only rendered on the server so same the `_app.tsx` it needs its set of meta tags
+
+- Add `_offline.tsx` file
+Static page that will render when the user goes offline and browse a page which wasn't cached previously
+
+- Add `_error.tsx` and `404.tsx` files
+Static page to render the ...*suspense*... Errors! 
 
 
 ===================================

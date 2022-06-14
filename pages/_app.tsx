@@ -6,6 +6,13 @@ import MetaTags from './MetaTags'
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
+			<Head>
+				<meta
+					name="viewport"
+					content="width=device-width,initial-scale=1,user-scalable=yes"
+				/>
+				<title>🚀 Next PWA 🚀</title>
+			</Head>
 			<Component {...pageProps} />
 		</>)
 }

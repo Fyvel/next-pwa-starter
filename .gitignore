@@ -35,6 +35,7 @@ yarn-error.log*
 *.tsbuildinfo
 
 # next-pwa
-**/public/workbox-*.js
-**/public/sw.js
+**/public/workbox-*.js*
+**/public/sw.js*
 **/public/worker-*.js
+**/public/fallback-*.js*
