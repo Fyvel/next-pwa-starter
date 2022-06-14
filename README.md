@@ -99,6 +99,27 @@ yarn lint
 yarn linst:sass
 ```
 
+# VI - Analyze the bundle
+```console
+yarn add -D @next/bundle-analyzer
+```
+Then set the environment variable to activate the analyze in `.env.local` file
+```
+// .env.local file
+ANALYZE=true 
+```
+> **_NOTE:_**  `.env.local` isn't meant to be commit, it the dev's local config
+
+```console
+yarn build
+```
+
+Bundle Gzipped sized at this point: 
+All (83.19 KB) (client)
+All (40.14 KB) (server)
+
+
+
 ===================================
 
 # Git commit icons
