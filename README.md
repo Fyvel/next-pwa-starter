@@ -85,6 +85,16 @@ yarn add sass
 - Add the material icons stylesheet and make a reusable Icon component (always useful at the begining, and pretty easy to ditch if another icon library is prefered)
 - Finally add a switch for dark theme
 
+# V - Linting
+- Add eslint rules and enforce coding style
+Let's apply the auto fix too and give it a try with
+```console
+yarn lint
+```
+
+> **_NOTE:_** The beauty here is that whenever a file is saved it will apply the correct formatting (ie: adjusting the indentation, removing extra semi-colons, etc.)
+
+
 ===================================
 
 # Git commit icons
