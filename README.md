@@ -52,6 +52,10 @@ Static page that will render when the user goes offline and browse a page which 
 - Add `_error.tsx` and `404.tsx` files
 Static page to render the ...*suspense*... Errors! 
 
+# IV - Setup the main layout
+- Create a default Layout component and its css module
+That will be use as default layout on every pages, custom layout can still overwrite the default one
+- Extract the Home or Landing component in it's own folder
 
 ===================================
 

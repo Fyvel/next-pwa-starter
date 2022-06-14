@@ -1,16 +1,9 @@
-import type { NextPage } from 'next'
-import Link from 'next/link'
+import Home from '@/pages/home'
 
-const Home: NextPage = () => {
+export default function Index() {
 	return (
-		<div>
-			<Link href="/does-not-exist">
-				<a>
-					<h2>Page that does not exist</h2>
-				</a>
-			</Link>
-		</div>
+		<Home />
 	)
 }
 
-export default Home
+

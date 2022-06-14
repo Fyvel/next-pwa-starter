@@ -1,9 +1,20 @@
-import '../styles/globals.css'
+import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import MetaTags from './MetaTags'
+import { NextPage } from 'next'
+import { ReactElement, ReactNode } from 'react'
+import Layout from '@/components/Layout'
 
-function MyApp({ Component, pageProps }: AppProps) {
+type NextPageWithLayout = NextPage & {
+	getLayout?: (page: ReactElement) => ReactNode
+}
+
+type AppPropsWithLayout = AppProps & {
+	Component: NextPageWithLayout
+}
+
+function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+	const PageLayout = Component.getLayout || ((page) => (<Layout>{page}</Layout>))
 	return (
 		<>
 			<Head>
@@ -13,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<title>🚀 Next PWA 🚀</title>
 			</Head>
-			<Component {...pageProps} />
+			{PageLayout(<Component {...pageProps} />)}
 		</>)
 }
 
