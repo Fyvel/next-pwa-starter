@@ -16,7 +16,7 @@ type AppPropsWithLayout = AppProps & {
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 	if (!process.env.NEXT_PUBLIC_MEME_API_URL)
-		throw new Error("Bro... you missed an api url in the `.env` file in used")
+		throw new Error('Bro... you missed an api url in the `.env` file in used')
 
 	const clients = {
 		memeApiUrl: process.env.NEXT_PUBLIC_MEME_API_URL

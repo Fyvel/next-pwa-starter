@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { useAppContext } from '@/context/AppContext';
+import { useEffect, useState } from 'react'
+import { useAppContext } from '@/context/AppContext'
 import styles from './Home.module.scss'
 
 export default function Home() {
@@ -37,5 +37,5 @@ export default function Home() {
 				</p>
 			</section>
 		</>
-	);
+	)
 };

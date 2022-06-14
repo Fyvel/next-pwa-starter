@@ -10,7 +10,7 @@ export default function Menu({ open, onClick }: MenuProps) {
 		<div className={`${styles.menu} ${!open
 			? `${styles.hide}`
 			: `${styles.show}`}`}
-			onClick={onClick} >
+		onClick={onClick} >
 			<Link href="/">
 				<span>Home</span>
 			</Link>
@@ -27,7 +27,7 @@ export function Burger({ open, onClick }: MenuProps) {
 		<button className={`${styles.burger} ${open
 			? `${styles.close}`
 			: `${styles.open}`}`}
-			onClick={onClick}>
+		onClick={onClick}>
 			<span />
 			<span />
 			<span />

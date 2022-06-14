@@ -1,8 +1,8 @@
-import { useState } from "react";
-import Icon from "@/components/Icon";
-import Menu, { Burger } from "./components/Menu";
-import styles from "./Navbar.module.scss";
-import { ThemeType } from "@/types/";
+import { useState } from 'react'
+import Icon from '@/components/Icon'
+import Menu, { Burger } from './components/Menu'
+import styles from './Navbar.module.scss'
+import { ThemeType } from '@/types/'
 
 export default function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -10,8 +10,8 @@ export default function Navbar() {
 
 	const handleThemeChange = () => {
 		const newTheme = theme === 'light' ? 'dark' : 'light'
-		localStorage.setItem('theme', newTheme);
-		document.documentElement.className = `theme-${newTheme}`;
+		localStorage.setItem('theme', newTheme)
+		document.documentElement.className = `theme-${newTheme}`
 		setTheme(newTheme)
 	}
 	return (

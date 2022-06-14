@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react"
+import { PropsWithChildren } from 'react'
 import styles from './Icon.module.scss'
 
 type IconProps = {
@@ -14,8 +14,8 @@ export default function Icon({
 }: PropsWithChildren<IconProps>) {
 	return (
 		<div 
-		className={`${styles.icon} ${styles[variant]} ${onClick ? styles.action : ''}`} 
-		onClick={onClick}>
+			className={`${styles.icon} ${styles[variant]} ${onClick ? styles.action : ''}`} 
+			onClick={onClick}>
 			<span className={`${styles['material-icons']} ${styles[`md${size}`]}`}>
 				{children}
 			</span>

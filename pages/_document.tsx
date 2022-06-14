@@ -1,8 +1,8 @@
 import Document, {
 	Html, Head, Main,
 	NextScript, DocumentContext, DocumentInitialProps
-} from "next/document";
-import MetaTags from "./MetaTags";
+} from 'next/document'
+import MetaTags from './MetaTags'
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
@@ -24,7 +24,7 @@ export default class MyDocument extends Document {
 					<NextScript />
 				</body>
 			</Html>
-		);
+		)
 	}
 }
 

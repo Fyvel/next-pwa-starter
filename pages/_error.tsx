@@ -1,5 +1,5 @@
-import { NextPageContext } from "next";
-import Link from "next/link";
+import { NextPageContext } from 'next'
+import Link from 'next/link'
 
 type ErrorProps = { statusCode: number }
 export default function Error({ statusCode }: ErrorProps) {
