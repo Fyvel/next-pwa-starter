@@ -10,7 +10,7 @@ export default function MemeApiService(baseUrl: string) {
 		.catch((err) => {
 			// TODO: create error handler
 			console.log(err.message)
-			return ""
+			return ''
 		})
 
 	return {

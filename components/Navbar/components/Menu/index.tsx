@@ -7,10 +7,11 @@ type MenuProps = {
 }
 export default function Menu({ open, onClick }: MenuProps) {
 	return (
-		<div className={`${styles.menu} ${!open
-			? `${styles.hide}`
-			: `${styles.show}`}`}
-		onClick={onClick} >
+		<div
+			className={`${styles.menu} ${!open
+				? `${styles.hide}`
+				: `${styles.show}`}`}
+			onClick={onClick} >
 			<Link href="/">
 				<span>Home</span>
 			</Link>
@@ -24,10 +25,12 @@ export default function Menu({ open, onClick }: MenuProps) {
 
 export function Burger({ open, onClick }: MenuProps) {
 	return (
-		<button className={`${styles.burger} ${open
-			? `${styles.close}`
-			: `${styles.open}`}`}
-		onClick={onClick}>
+		<button
+			aria-label='menu'
+			className={`${styles.burger} ${open
+				? `${styles.close}`
+				: `${styles.open}`}`}
+			onClick={onClick}>
 			<span />
 			<span />
 			<span />

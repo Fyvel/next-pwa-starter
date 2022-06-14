@@ -6,7 +6,7 @@ const AppContext = createContext<AppContextDefinition | undefined>(undefined)
 
 export const useAppContext = () => {
 	const context = useContext(AppContext)
-	if (!context) throw Error(`AppContext hasn't been provided!`)
+	if (!context) throw Error('AppContext hasn\'t been provided!')
 	return context
 }
 

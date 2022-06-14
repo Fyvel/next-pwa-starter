@@ -1,4 +1,4 @@
-import MemeApiService from "./meme-service"
+import MemeApiService from './meme-service'
 
 export default function ServiceFactory(clients: Clients) {
 	const memeApiService = MemeApiService(clients.memeApiUrl)
