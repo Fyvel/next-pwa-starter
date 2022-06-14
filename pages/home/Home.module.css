@@ -1,0 +1,26 @@
+.content {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.content>p {
+	text-align: justify;
+}
+
+.article {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.image {
+	height: 300px;
+	width: 300px;
+}
+
+.waiting {
+	height: 300px;
+	display: flex;
+	font-weight: bold;
+	align-items: center;
+}
