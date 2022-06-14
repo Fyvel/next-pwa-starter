@@ -94,6 +94,10 @@ yarn lint
 
 > **_NOTE:_** The beauty here is that whenever a file is saved it will apply the correct formatting (ie: adjusting the indentation, removing extra semi-colons, etc.)
 
+- Same thing for the CSS now
+```console
+yarn linst:sass
+```
 
 ===================================
 

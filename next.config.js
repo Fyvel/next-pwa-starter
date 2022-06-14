@@ -9,6 +9,6 @@ module.exports = withPWA({
 		runtimeCaching,
 	},
 	sassOptions: {
-		additionalData: `@import "styles/Theme.module.scss";`,
+		additionalData: '@import "styles/Theme.module.scss";',
 	},
 })
