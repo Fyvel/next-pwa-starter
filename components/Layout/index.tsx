@@ -1,7 +1,7 @@
 import { ReactNode } from "react"
 import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
-import styles from "./Layout.module.css"
+import styles from "./Layout.module.scss"
 
 export default function Layout({ children }: { children: ReactNode }) {
 	return (

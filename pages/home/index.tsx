@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useAppContext } from '@/context/AppContext';
-import styles from './Home.module.css'
+import styles from './Home.module.scss'
 
 export default function Home() {
 	const [memeUrl, setMemeUrl] = useState('')

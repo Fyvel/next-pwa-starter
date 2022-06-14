@@ -1,0 +1,31 @@
+.content {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	p {
+		text-align: justify;
+	}
+
+	@include screen(md) {
+		grid-template-columns: 2fr 1fr;
+		gap: theme-space(5);
+	}
+
+	.article {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+
+		img {
+			max-height: 300px;
+			margin: theme-space(3);
+		}
+
+		.waiting {
+			height: 300px;
+			display: flex;
+			font-weight: bold;
+			align-items: center;
+		}
+	}
+}
