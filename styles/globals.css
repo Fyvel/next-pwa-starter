@@ -1,3 +1,31 @@
+:root {
+	--primary-color: #4b0082;
+	--primary-color-light: #6f339b;
+	--primary-color-dark: #3c0068;
+	--secondary-color: #0000ff;
+	--secondary-color-light: #3333ff;
+	--secondary-color-dark: #0000cc;
+	--warning-color: #ff1493;
+	--warning-color-light: #ff43a9;
+	--warning-color-dark: #cc1076;
+	--text-color: black;
+	--body-color: white;
+}
+
+:root.theme-dark {
+	--primary-color: #ffa500;
+	--primary-color-light: #ffb733;
+	--primary-color-dark: #cc8400;
+	--secondary-color: #90ee90;
+	--secondary-color-light: #a6f1a6;
+	--secondary-color-dark: #73be73;
+	--warning-color: #ff1493;
+	--warning-color-light: #ff43a9;
+	--warning-color-dark: #cc1076;
+	--text-color: white;
+	--body-color: black;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -18,4 +46,8 @@ body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	transition: background-color 0.4s ease;
+	transition: color 0.4s ease;
+	background-color: var(--body-color);
+	color: var(--text-color);
 }

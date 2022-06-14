@@ -1,0 +1,17 @@
+$theme-colors: (
+	primary: var(--primary-color),
+	primary-light: var(--primary-color-light),
+	primary-dark: var(--primary-color-dark),
+	secondary: var(--secondary-color),
+	secondary-light: var(--secondary-color-light),
+	secondary-dark: var(--secondary-color-dark),
+	warning: var(--warning-color),
+	warning-light: var(--warning-color-light),
+	warning-dark: var(--secondary-color-dark),
+	text: var(--text-color),
+	body: var(--body-color),
+);
+
+@function theme-color($key) {
+	@return map-get($theme-colors, $key);
+}

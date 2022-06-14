@@ -1,0 +1,23 @@
+$screen-sm: 600px;
+$screen-md: 960px;
+$screen-lg: 1280px;
+$screen-xl: 1800px;
+
+$screens: (
+	sm: $screen-sm,
+	md: $screen-md,
+	lg: $screen-lg,
+	xl: $screen-xl,
+);
+
+@mixin screen($key) {
+	@if map-has-key($screens, $key) {
+		$value: map-get($screens, $key);
+
+		@media screen and (min-width: $value) {
+			@content;
+		}
+	}
+
+	@warn "Unknown `#{$key}` in $screens";
+}

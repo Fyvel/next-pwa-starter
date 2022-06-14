@@ -8,4 +8,7 @@ module.exports = withPWA({
 		dest: 'public',
 		runtimeCaching,
 	},
+	sassOptions: {
+		additionalData: `@import "styles/Theme.module.scss";`,
+	},
 })
