@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { NextPage } from 'next'
 import { ReactElement, ReactNode } from 'react'
 import Layout from '@/components/Layout'
+import AppContextProvider from '@/context/AppContext'
 
 type NextPageWithLayout = NextPage & {
 	getLayout?: (page: ReactElement) => ReactNode
@@ -14,7 +15,15 @@ type AppPropsWithLayout = AppProps & {
 }
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+	if (!process.env.NEXT_PUBLIC_MEME_API_URL)
+		throw new Error("Bro... you missed an api url in the `.env` file in used")
+
+	const clients = {
+		memeApiUrl: process.env.NEXT_PUBLIC_MEME_API_URL
+	}
+
 	const PageLayout = Component.getLayout || ((page) => (<Layout>{page}</Layout>))
+
 	return (
 		<>
 			<Head>
@@ -24,7 +33,9 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 				/>
 				<title>🚀 Next PWA 🚀</title>
 			</Head>
-			{PageLayout(<Component {...pageProps} />)}
+			<AppContextProvider clients={{ ...clients }}>
+				{PageLayout(<Component {...pageProps} />)}
+			</AppContextProvider>
 		</>)
 }
 

@@ -52,10 +52,22 @@ Static page that will render when the user goes offline and browse a page which 
 - Add `_error.tsx` and `404.tsx` files
 Static page to render the ...*suspense*... Errors! 
 
-# IV - Setup the main layout
+# IV - Setup the app skeleton
 - Create a default Layout component and its css module
 That will be use as default layout on every pages, custom layout can still overwrite the default one
 - Extract the Home or Landing component in it's own folder
+- Add some components
+- Add context and api service factory
+
+### Folder structure:
+|- api // contains the API calls
+|- components // contains the shared components
+|- context // contains global contexts
+|- hooks // contains all the fancy custom hooks
+|- pages // folder that Next uses to know which page to render
+|- public // contains the static assets and service worker
+|- styles // contains shared CSS
+
 
 ===================================
 
