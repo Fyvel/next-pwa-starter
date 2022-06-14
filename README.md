@@ -83,6 +83,7 @@ yarn add sass
 - Rename the CSS module into 'Blah.module.**scss**'
 - Make it look decent (check out this cool burger button)
 - Add the material icons stylesheet and make a reusable Icon component (always useful at the begining, and pretty easy to ditch if another icon library is prefered)
+- Finally add a switch for dark theme
 
 ===================================
 

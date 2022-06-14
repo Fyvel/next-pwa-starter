@@ -40,6 +40,9 @@
 			],
 			"@/context/*": [
 				"context/*"
+			],
+			"@/types/*": [
+				"types/index"
 			]
 		}
 	},
