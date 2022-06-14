@@ -1,0 +1,66 @@
+/* Material Icons stuff */
+.material-icons {
+	font-family: "Material Icons", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizelegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: "liga";
+
+	&.md18 {
+		font-size: 18px;
+	}
+
+	&.md24 {
+		font-size: 24px;
+	}
+
+	&.md36 {
+		font-size: 36px;
+	}
+
+	&.md48 {
+		font-size: 48px;
+	}
+}
+
+.icon {
+	cursor: default;
+
+	&.action {
+		cursor: pointer;
+	}
+
+	&.default {
+		color: theme-color(body);
+	}
+
+	&.primary {
+		color: theme-color(primary);
+	}
+
+	&.secondary {
+		color: theme-color(secondary);
+	}
+
+	&.inactive {
+		color: rgb(255 255 255 / 10%);
+	}
+}

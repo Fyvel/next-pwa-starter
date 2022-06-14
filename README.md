@@ -68,6 +68,21 @@ That will be use as default layout on every pages, custom layout can still overw
 |- public // contains the static assets and service worker
 |- styles // contains shared CSS
 
+# IV - Make it pretty with some CSS
+Sure, we could go with CSS-in-JS but let's respect ourselves a little bit and go with CSS module 😎
+We'll use SCSS to generate a theme color based on CSS variables.
+Each pages or components requiring styling will have its own scss module, and these module will have access to the global theme.
+
+- Install `sass` 
+```console
+yarn add sass
+```
+- In `globals.css` add the theme colors (ie: light & dark themes) as CSS variables
+- Add the shared theming tools (spacing /colors / media queries / mixins / functions)
+- Update the `next.config.js` file to include automatically the theme in every scss files (pretty cool feature from Next btw)
+- Rename the CSS module into 'Blah.module.**scss**'
+- Make it look decent (check out this cool burger button)
+- Add the material icons stylesheet and make a reusable Icon component (always useful at the begining, and pretty easy to ditch if another icon library is prefered)
 
 ===================================
 
