@@ -1,3 +1,4 @@
+import Splashscreen from '@/components/Splashscreen'
 import Document, {
 	Html, Head, Main,
 	NextScript, DocumentContext, DocumentInitialProps
@@ -20,6 +21,7 @@ export default class MyDocument extends Document {
 					<link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet" />
 				</Head>
 				<body>
+					<Splashscreen />
 					<Main />
 					<NextScript />
 				</body>
@@ -27,4 +29,3 @@ export default class MyDocument extends Document {
 		)
 	}
 }
-

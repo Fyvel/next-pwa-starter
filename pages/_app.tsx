@@ -1,3 +1,4 @@
+import '@/styles/splashscreen.css'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
@@ -21,6 +22,14 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 	const clients = {
 		memeApiUrl: process.env.NEXT_PUBLIC_MEME_API_URL
 	}
+
+	// Remove the splashscreen
+	setTimeout(() => {
+		if (typeof window !== 'undefined') {
+			const splahscreen = document.getElementById('splashscreen')
+			if (splahscreen) splahscreen.remove()
+		}
+	}, 2000)
 
 	const PageLayout = Component.getLayout || ((page) => (<Layout>{page}</Layout>))
 

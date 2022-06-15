@@ -1,3 +1,6 @@
+## TL;DR
+[Live demo](https://next-pwa-starter-green.vercel.app/)
+
 # I - Create next app
 
 JS is cool but TS is more serious
@@ -118,7 +121,9 @@ Bundle Gzipped sized at this point:
 All (83.19 KB) (client)
 All (40.14 KB) (server)
 
-
+# Add a splash screen
+It always feels dodgy to setup a splashscreen because ideally it needs to render while the JS finishes to load
+> **_NOTE:_**  Since Splashscreen component is called in `_document.tsx` (SSR), common react features and theming aren't available. Which is kinda ok for a one-off component I guess.
 
 ===================================
 
