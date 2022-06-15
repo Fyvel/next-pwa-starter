@@ -1,0 +1,18 @@
+{
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"dbaeumer.vscode-eslint", // must have
+		"wix.vscode-import-cost", // must have
+		"sibiraj-s.vscode-scss-formatter", // must have
+		"oderwat.indent-rainbow", // cool to have
+		"PKief.material-icon-theme", // cool to have
+		"hoovercj.vscode-power-mode", // super cool to have
+		"EQuimper.react-native-react-redux", // nice to have
+		"Tyriar.shell-launcher", // must have
+		"cssho.vscode-svgviewer", // nice to have
+		"ChakrounAnas.turbo-console-log", // cool to have
+		"redhat.vscode-commons", // must have
+		"redhat.vscode-xml", // must have
+		"redhat.vscode-yaml" // must have
+	]
+}
