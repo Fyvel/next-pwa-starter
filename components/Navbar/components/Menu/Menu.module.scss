@@ -1,11 +1,6 @@
 .menu {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: flex-start;
-	gap: theme-space(5);
 	background-color: theme-color(body);
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	text-align: left;
 	padding: 3rem 2rem;
@@ -15,8 +10,27 @@
 	right: 0;
 	transition: transform 0.3s ease-in-out;
 
-	> * {
-		cursor: pointer;
+	.link-list {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: theme-space(5);
+		padding-top: theme-space(8);
+
+		.link {
+			text-decoration: none;
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			width: 100%;
+			gap: theme-space(3);
+			cursor: pointer;
+
+			:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	.close {

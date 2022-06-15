@@ -6,7 +6,7 @@ export default function MemeApiService(baseUrl: string) {
 			}
 			return response.json()
 		})
-		.then((data: any) => data.url as string)
+		.then((data: any) => data?.url as string)
 		.catch((err) => {
 			// TODO: create error handler
 			console.log(err.message)
