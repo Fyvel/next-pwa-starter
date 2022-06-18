@@ -125,6 +125,15 @@ All (40.14 KB) (server)
 It always feels dodgy to setup a splashscreen because ideally it needs to render while the JS finishes to load
 > **_NOTE:_**  Since Splashscreen component is called in `_document.tsx` (SSR), common react features and theming aren't available. Which is kinda ok for a one-off component I guess.
 
+
+# Prompt the user to install the PWA
+- Create a `workers/index.js` to disable Workbox logging when running the app in dev mode
+- Create a `useServiceWorker.ts` hook to configure and use the service-worker events
+> **_NOTE:_** We need to add some type definitions to make Typescript happy, see `global.d.ts`
+> **_NOTE:_** How to troubleshoot service-workers, (see this link)[https://developer.chrome.com/docs/devtools/progressive-web-apps/]
+
+
+
 ===================================
 
 # Git commit icons
