@@ -18,8 +18,9 @@ export default function MetaTags() {
 				type="image/png"
 				sizes="32x32"
 			/>
-			<link rel="apple-touch-icon" href="/apple-icon.png"></link>
-			<meta name="theme-color" content="#004740" />
+			<link rel="apple-touch-icon" href="/apple-icon.png" />
+			<meta name="theme-color" content="#4b0082" media="(prefers-color-scheme: light)" />
+			<meta name="theme-color" content="#ffa500" media="(prefers-color-scheme: dark)" />
 		</>
 	)
 }

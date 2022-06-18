@@ -1,6 +1,8 @@
 import { PropsWithChildren } from 'react'
 import styles from './Icon.module.scss'
 
+// List of material icons: https://fonts.google.com/icons
+
 type IconProps = {
 	size?: 18 | 24 | 36 | 48,
 	variant?: 'default' | 'primary' | 'secondary',
