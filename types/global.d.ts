@@ -24,4 +24,8 @@ declare global {
 	interface WindowEventMap extends ServiceWorkerGlobalScopeEventMap {
 		beforeinstallprompt: BeforeInstallPromptEvent
 	}
+
+	interface Navigator {
+		standalone?: boolean
+	}
 }

@@ -6,6 +6,7 @@ import { NextPage } from 'next'
 import { ReactElement, ReactNode } from 'react'
 import Layout from '@/components/Layout'
 import AppContextProvider from '@/context/AppContext'
+import PwaInstaller from '@/components/PwaInstaller'
 
 type NextPageWithLayout = NextPage & {
 	getLayout?: (page: ReactElement) => ReactNode
@@ -45,6 +46,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 			<AppContextProvider clients={{ ...clients }}>
 				{PageLayout(<Component {...pageProps} />)}
 			</AppContextProvider>
+			<PwaInstaller />
 		</>)
 }
 

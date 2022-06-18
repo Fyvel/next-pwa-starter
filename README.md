@@ -132,6 +132,10 @@ It always feels dodgy to setup a splashscreen because ideally it needs to render
 > **_NOTE:_** We need to add some type definitions to make Typescript happy, see `global.d.ts`
 > **_NOTE:_** How to troubleshoot service-workers, (see this link)[https://developer.chrome.com/docs/devtools/progressive-web-apps/]
 
+- Create a `PwaInstaller.tsx` component to handle the UX to install the PWA
+> **_NOTE:_** For Web and android devices, we can programmaticaly install the PWA. For iOs devices... best we can do as of now is to provide the instructions to the user to do it manually.
+- Create `usePromptPwa.tsx` hook to abstract the logic
+- Create `PwaInstaller` component to render the UI elements
 
 
 ===================================
