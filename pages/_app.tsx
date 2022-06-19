@@ -7,6 +7,7 @@ import { ReactElement, ReactNode } from 'react'
 import Layout from '@/components/Layout'
 import AppContextProvider from '@/context/AppContext'
 import PwaInstaller from '@/components/PwaInstaller'
+import ThemeContextProvider from '@/context/ThemeContext'
 
 type NextPageWithLayout = NextPage & {
 	getLayout?: (page: ReactElement) => ReactNode
@@ -35,7 +36,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 	const PageLayout = Component.getLayout || ((page) => (<Layout>{page}</Layout>))
 
 	return (
-		<>
+		<ThemeContextProvider>
 			<Head>
 				<meta
 					name="viewport"
@@ -47,7 +48,8 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 				{PageLayout(<Component {...pageProps} />)}
 			</AppContextProvider>
 			<PwaInstaller />
-		</>)
+		</ThemeContextProvider>
+	)
 }
 
 export default MyApp

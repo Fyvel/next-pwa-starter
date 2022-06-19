@@ -137,6 +137,11 @@ It always feels dodgy to setup a splashscreen because ideally it needs to render
 - Create `usePromptPwa.tsx` hook to abstract the logic
 - Create `PwaInstaller` component to render the UI elements
 
+# Record and detect user's favorite theme
+- Let's create `ThemeContext.tsx` 
+It's where we are gonna abstract the **theme detection** and **theme changes**
+*Then we can make it accessible across the app and update the Navbar component*
+
 
 ===================================
 
