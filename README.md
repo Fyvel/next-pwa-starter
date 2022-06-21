@@ -142,6 +142,12 @@ It always feels dodgy to setup a splashscreen because ideally it needs to render
 It's where we are gonna abstract the **theme detection** and **theme changes**
 *Then we can make it accessible across the app and update the Navbar component*
 
+# Customize app logo and Apple compliant
+- Create a fancy icon/logo whatever, I usually go (there)[https://www.freelogodesign.org/] and shamelessly get the SVG element inspecting the page.
+- Best place to generate icons automatically (pwa-asset-generator)[https://github.com/onderceylan/pwa-asset-generator]
+- Then we reference all the maskable icons in the `webmanifest.json` and `MetaTags.tsx`
+For more info see (here)[https://web.dev/add-manifest/#icons]
+
 
 ===================================
 
