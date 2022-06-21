@@ -6,8 +6,8 @@ export default function Splashscreen() {
 			<svg xmlns="http://www.w3.org/2000/svg" height="128px" width="128px" viewBox="0 0 128 128" className="pl">
 				<defs>
 					<linearGradient y2="1" x2="0" y1="0" x1="0" id="pl-grad">
-						<stop stopColor="#ffcd70" offset="0%"></stop>
-						<stop stopColor="#cc8400" offset="100%"></stop>
+						<stop stopColor="#ff43a9" offset="0%"></stop>
+						<stop stopColor="#cc1076" offset="100%"></stop>
 					</linearGradient>
 				</defs>
 				<circle strokeLinecap="round" strokeWidth="16" stroke="hsla(0,10%,10%,0.1)" fill="none" cy="64" cx="64" r="56" className="pl__ring"></circle>

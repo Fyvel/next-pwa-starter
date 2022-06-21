@@ -30,6 +30,12 @@
 			:hover {
 				text-decoration: underline;
 			}
+
+			:first-child {
+				:hover {
+					text-decoration: none;
+				}
+			}
 		}
 	}
 

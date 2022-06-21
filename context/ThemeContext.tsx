@@ -32,7 +32,6 @@ export default function ThemeContextProvider(props: PropsWithChildren<{}>) {
 			const preferredTheme = window.matchMedia
 				? getTheme(window.matchMedia('(prefers-color-scheme: dark)').matches)
 				: 'light'
-			console.log(' LOG:  >  getActiveTheme  >  existingTheme || preferredTheme', existingTheme || preferredTheme)
 			return existingTheme || preferredTheme
 		}
 		setTheme(getActiveTheme())
