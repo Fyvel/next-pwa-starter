@@ -15,7 +15,11 @@ export default function PwaInstaller() {
 
 	useEffect(() => {
 		if (!window) return
-		// Promote PWA installation if not installed
+
+		// Promote PWA installation if not installed and not recently dismissed
+		const lastTimeDismiss = localStorage.getItem('dismiss') || '0'
+		if ((Date.now() - +lastTimeDismiss) < (60 * 60 * 1000)) return
+
 		// Delayed the snackbar so the user doesn't feel harassed heh
 		setTimeout(() => {
 			const isInStandaloneMode = (
@@ -37,6 +41,7 @@ export default function PwaInstaller() {
 	}
 
 	const handleDismiss = () => {
+		localStorage.setItem('dismiss', Date.now().toString())
 		setShowInstallPwa(false)
 	}
 
