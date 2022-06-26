@@ -46,14 +46,11 @@ But there are work arounds to give a decent UX on iOs too!
 
 # III - SSR and offline support
 
-- Add `_document.tsx` file
-`_document.tsx` forms the overall structure of the **HTML**. This file is only rendered on the server so same the `_app.tsx` it needs its set of meta tags
+- Add `_document.tsx` file. It forms the overall structure of the **HTML**. This file is only rendered on the server so same the `_app.tsx` it needs its set of meta tags
 
-- Add `_offline.tsx` file
-Static page that will render when the user goes offline and browse a page which wasn't cached previously
+- Add `_offline.tsx` file. Static page that will render when the user goes offline and browse a page which wasn't cached previously
 
-- Add `_error.tsx` and `404.tsx` files
-Static page to render the ...*suspense*... Errors! 
+- Add `_error.tsx` and `404.tsx` files. Static page to render the ...*suspense*... Errors! 
 
 # IV - Setup the app skeleton
 - Create a default Layout component and its css module
@@ -62,14 +59,14 @@ That will be use as default layout on every pages, custom layout can still overw
 - Add some components
 - Add context and api service factory
 
-### Folder structure:
-|- api // contains the API calls
-|- components // contains the shared components
-|- context // contains global contexts
-|- hooks // contains all the fancy custom hooks
-|- pages // folder that Next uses to know which page to render
-|- public // contains the static assets and service worker
-|- styles // contains shared CSS
+## Folder structure:
+|- api // contains the API calls  
+|- components // contains the shared components  
+|- context // contains global contexts  
+|- hooks // contains all the fancy custom hooks  
+|- pages // folder that Next uses to know which page to render  
+|- public // contains the static assets and service worker  
+|- styles // contains shared CSS  
 
 # IV - Make it pretty with some CSS
 Sure, we could go with CSS-in-JS but let's respect ourselves a little bit and go with CSS module 😎
@@ -130,7 +127,7 @@ It always feels dodgy to setup a splashscreen because ideally it needs to render
 - Create a `workers/index.js` to disable Workbox logging when running the app in dev mode
 - Create a `useServiceWorker.ts` hook to configure and use the service-worker events
 > **_NOTE:_** We need to add some type definitions to make Typescript happy, see `global.d.ts`
-> **_NOTE:_** How to troubleshoot service-workers, (see this link)[https://developer.chrome.com/docs/devtools/progressive-web-apps/]
+> **_NOTE:_** How to troubleshoot service-workers, [see this link](https://developer.chrome.com/docs/devtools/progressive-web-apps/)
 
 - Create a `PwaInstaller.tsx` component to handle the UX to install the PWA
 > **_NOTE:_** For Web and android devices, we can programmaticaly install the PWA. For iOs devices... best we can do as of now is to provide the instructions to the user to do it manually.
@@ -143,11 +140,10 @@ It's where we are gonna abstract the **theme detection** and **theme changes**
 *Then we can make it accessible across the app and update the Navbar component*
 
 # Customize app logo and Apple compliant
-- Create a fancy icon/logo whatever, I usually go (there)[https://www.freelogodesign.org/] and shamelessly get the SVG element inspecting the page.
-- Best place to generate icons automatically (pwa-asset-generator)[https://github.com/onderceylan/pwa-asset-generator]
+- Create a fancy icon/logo whatever, I usually go [there](https://www.freelogodesign.org/) and shamelessly get the SVG element inspecting the page.
+- Best place to generate icons automatically [pwa-asset-generator](https://github.com/onderceylan/pwa-asset-generator)
 - Then we reference all the maskable icons in the `webmanifest.json` and `MetaTags.tsx`
-For more info see (here)[https://web.dev/add-manifest/#icons]
-
+For more info see [here](https://web.dev/add-manifest/#icons)
 
 ===================================
 
